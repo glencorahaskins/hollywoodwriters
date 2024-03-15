@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">(function () {
+    'use strict';
+    function initResponsiveEmbed() {
+      window.addEventListener('message', function (event) {
+        if (typeof event.data['datawrapper-height'] !== 'undefined') {
+          var iframes = document.querySelectorAll('iframe');
+          for (var chartId in event.data['datawrapper-height']) {
+            for (var i = 0; i < iframes.length; i++) {
+              if (iframes[i].contentWindow === event.source) {
+                var height = event.data['datawrapper-height'][chartId] + 'px';
+                iframes[i].style.height = height;
+              }
+            }
+          }
+        }
+      });
+    }
+    initResponsiveEmbed();
+})();
+</script>
+
+<body>
+
+<iframe title="" aria-label="Grouped Columns" id="datawrapper-chart-V2pB9" src="https://datawrapper.dwcdn.net/V2pB9/2/" scrolling="no" frameborder="0" style="width: 0; margin: 0 0 0 25%; min-width: 50% !important; border: none;" height="350" data-external="1"></iframe>
+
+<br><br><br><br>
+
+<iframe title="" aria-label="Split Bars" id="datawrapper-chart-hHMiu" src="https://datawrapper.dwcdn.net/hHMiu/3/" scrolling="no" frameborder="0" style="width: 0; margin: 0 0 0 25%; min-width: 50% !important; border: none;" height="288" data-external="1"></iframe>
+
+<br><br><br><br>
+
+<iframe title="" aria-label="Dot Plot" id="datawrapper-chart-NUm6f" src="https://datawrapper.dwcdn.net/NUm6f/4/" scrolling="no" frameborder="0" style="width: 0; margin: 0 0 0 25%; min-width: 50% !important; border: none;" height="261" data-external="1"></iframe>
+
+<br><br><br><br>
+
+<iframe title="" aria-label="Bullet Bars" id="datawrapper-chart-PijuW" src="https://datawrapper.dwcdn.net/PijuW/2/" scrolling="no" frameborder="0" style="width: 0; margin: 0 0 0 25%; min-width: 50% !important; border: none;" height="256" data-external="1"></iframe>
+
+</body>
+</html>
