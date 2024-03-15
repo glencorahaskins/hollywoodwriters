@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      html {
+        display: table;
+        margin: 0 0 0 50%;
+      }
+
+      body {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .container {
+        position: relative;
+        width: 100%;
+      }
+
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .fillbox {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60vh;
+        width: 100%;
+        opacity: 100;
+        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        background-color: #032B30;
+      }
+
+      .midbox {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60vh;
+        ;
+        width: 60vh;
+        opacity: 100;
+        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        margin: 0 0 0 50%;
+        background-color: #FFFFFF;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #032B30;
+      }
+
+      .container:hover .overlay {
+        opacity: 1;
+      }
+
+      p.big {
+        line-height: 1.5;
+      }
+
+      .text {
+        color: white;
+        font-size: 12px;
+        font-family: "Inter";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .textbox2 {
+        color: white;
+        font-size: calc(0.65vw + 0.65vh);
+        font-family: "Inter";
+        position: absolute;
+        top: 50vh;
+        left: 25%;
+        width: 40%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        justify-content: left;
+        text-align: left;
+      }
+
+      .game-board {
+        display: grid;
+        grid-auto-flow: column;
+        /* this one is important to fill all the cells */
+        grid-template-rows: 20vh 20vh 20vh;
+        grid-template-columns: 20vh 20vh 20vh;
+        gap: 12px 12px;
+      }
+
+      .grid-board {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: 20vh 20vh 20vh;
+        grid-template-columns: 20vh 20vh 20vh 20vh 20vh;
+        gap: 0px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fillbox"></div>
+    <div class="midbox"></div>
+    <div class="textbox2">
+      <p style="font-size: calc(1.15vw + 1.15vh); font-family: Newsreader;">
+        <b>The potential to undermine the career ladder and opportunities for newer writers</b>
+      </p>
+      <p class="big"> If the use of generative AI results in smaller, or even nonexistent, writers’ room, it would threaten the structured career ladder that has defined TV writing in Hollywood for decades. Historically, if writers are successful in securing roles in successive seasons or on new shows, they typically ascend the following hierarchy, gaining valuable experience, mentorship, credits and on-the-job training in each role.</p>
+      <br>
+      <p class="big"> In addition to the roles above, which are represented by the Writers’ Guild, the show’s writing is also supported by entry-level roles like writers’ assistant and personal assistant, which often provide a springboard to staff writing positions with union representation. </p>
+    </div>
+    <div class="grid-board">
+      <div class="container">
+        <img src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/ladder_left.png" class="image">
+      </div>
+      <div class="container">
+        <img src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/consulting_producer2.png" style="width:100%" class="image">
+        <div class="overlay">
+          <div class="text">
+            <b>CONSULTING PRODUCERS</b>
+            <br>
+            <br> Executive-level contributors
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/co_executive_producer2.png" style="width:100%" class="image">
+        <div class="overlay">
+          <div class="text">
+            <b>CO-EXECUTIVE PRODUCERS</b>
+            <br>
+            <br> Second-in-command
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/executive_producer2.png" style="width:100%" class="image">
+        <div class="overlay">
+          <div class="text">
+            <b>EPS AND SHOWRUNNERS</b>
+            <br>
+            <br> Chief decision-makers
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/ladder_right.png" class="image">
+      </div>
+      <div class="container">
+        <img src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/ladder_left.png" class="image">
+      </div>
+      <div class="container">
+        <img src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/co-producer2.png" style="width:100%" class="image">
+        <div class="overlay">
+          <div class="text">
+            <b>CO-PRODUCERS</b>
+            <br>
+            <br> Mid-career managers
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/producer2.png" style="width:100%" class="image">
+        <div class="overlay">
+          <div class="text">
+            <b>PRODUCERS</b>
+            <br>
+            <br> Creative direction-setters
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/supervising_producer2.png" style="width:100%" class="image">
+        <div class="overlay">
+          <div class="text">
+            <b>SUPERVISING PRODUCERS</b>
+            <br>
+            <br> Senior-level story developers
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/ladder_right.png" class="image">
+      </div>
+      <div class="container">
+        <img src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/ladder_left.png" class="image">
+      </div>
+      <div class="container">
+        <img src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/staff_writer2.png" style="width:100%" class="image">
+        <div class="overlay">
+          <div class="text">
+            <b>STAFF WRITERS</b>
+            <br>
+            <br> Entry-level ideators
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/story_editor2.png" style="width:100%" class="image">
+        <div class="overlay">
+          <div class="text">
+            <b>STORY EDITORS</b>
+            <br>
+            <br> Salaried script contributors
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/executive_story_editor2.png" style="width:100%" class="image">
+        <div class="overlay">
+          <div class="text">
+            <b>EXECUTIVE STORY EDITORS</b>
+            <br>
+            <br> Early-career team leaders
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/ladder_right.png" class="image">
+      </div>
+    </div>
+  </body>
+</html>
