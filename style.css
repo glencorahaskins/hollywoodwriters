@@ -176,13 +176,13 @@ h4 {
 	width: 15px;
 	height: 28px;
 	cursor: pointer;
-	background: transparent url(style/images/blog-arrows.jpg) no-repeat top right;
+	background: transparent url(https://github.com/glencorahaskins/hollywoodwriters/blob/main/blog-arrows.jpg) no-repeat top right;
 }
 
 .d-carousel .jcarousel-direction-rtl .jcarousel-next-horizontal {
 	left: 5px;
 	right: auto;
-	background-image: url(style/images/blog-arrows.jpg);
+	background-image: url(https://github.com/glencorahaskins/hollywoodwriters/blob/main/blog-arrows.jpg);
 }
 
 .d-carousel .jcarousel-next-horizontal:hover {
@@ -197,13 +197,13 @@ h4 {
 	width: 15px;
 	height: 28px;
 	cursor: pointer;
-	background: transparent url(style/images/blog-arrows.jpg) no-repeat top left;
+	background: transparent url(https://github.com/glencorahaskins/hollywoodwriters/blob/main/blog-arrows.jpg) no-repeat top left;
 }
 
 .d-carousel .jcarousel-direction-rtl .jcarousel-prev-horizontal {
 	left: auto;
 	right: 5px;
-	background-image: url(style/images/blog-arrows.jpg);
+	background-image: url(https://github.com/glencorahaskins/hollywoodwriters/blob/main/blog-arrows.jpg);
 }
 
 .d-carousel .jcarousel-prev-horizontal:hover {
