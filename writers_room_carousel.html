@@ -14,6 +14,15 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inter&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+<script>
+
+$(".disable-owl-swipe").on("touchstart mousedown", function(e) {
+    // Prevent carousel swipe
+    e.stopPropagation();
+})
+
+</script>
       <style>
       html {
       box-sizing: border-box;
@@ -592,6 +601,7 @@
                      </div>
                      <div class='carousel__screen'>
                         <div class='carousel__track'>
+<div class="item disable-owl-swipe"><div>
                            <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                               <div class='demo-content'>
                                  <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/staff_writer.png" style="width:100%" class="image">
