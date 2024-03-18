@@ -453,32 +453,45 @@ $(".disable-owl-swipe").on("touchstart mousedown", function(e) {
 
 @media screen and (max-width: 1023px) {
 
+      html {
+      top: 25%;
+      bottom: 25%;
+      left: 50%;
+      right: 50%;
+      padding: 0%;
+      width: 80%;
+      }
+
       .fillbox {
-      height: 100vh;
+      height: 100%;
+      width: 100%;
       }
 
       .textbox2 {
-      display: block;
-      left: 50%;
-      width: 80%;
-      top: 40vh;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      }
-
-      .demo-content {
-      height: 40vh;
+      margin-left: 25%;
+      display: inline-block;
+      width: 80vw;
+      text-align: center;
       }
 
       .carousel {
-      display: block;
-      height: 20vh;
-      top: 40vh;
-      left: -40%;
-      width: 80%;
-      padding-left: 0;
-      padding-right: 0;
+      display: inline-block;
+      margin-top: 50vh;
+      margin-left: 40vw;
+      width: 90vw;
+      height: 50vh;
+      vertical-align: middle;
+      justify-content: center;
+      }
+
+      .carousel__item {
+      display: inline-flex;
+      padding-left: 2vw;
+      padding-right: 2vw;
+      vertical-align: middle;
+      white-space: normal;
+      top: 0;
+      height: 50vh;
       }
 
       .carousel__activator:nth-of-type(n):checked ~ .carousel__controls:nth-of-type(n) {
@@ -504,45 +517,19 @@ $(".disable-owl-swipe").on("touchstart mousedown", function(e) {
       padding-right: 2vw;
       }
 
-      .carousel__item {
-      display: inline-flex;
-      padding-left: 2vw;
-      padding-right: 2vw;
-      vertical-align: middle;
-      white-space: normal;
-      top: 0;
-      height: 50vh;
-      }
-
       .carousel__item--tablet-in-1 {
       width: 90%;
+      height: 20vh;
       }
 
       .carousel__item--tablet-in-2 {
       width: 45%;
+      height: 20vh;
       }
 
       .carousel__item--tablet-in-3 {
       width: 30%;
-      }
-}
-
-@media screen and (max-width: 650px) {
-      .carousel__track {
-      padding-left: 0;
-      padding-right: 0;
-      }
-
-      .carousel__item--mobile-in-1 {
-      width: 90%;
-      }
-
-      .carousel__item--mobile-in-2 {
-      width: 45%;
-      }
-
-      .carousel__item--mobile-in-3 {a
-      width: 30%;
+      height: 20vh;
       }
 }
       </style>
@@ -557,6 +544,7 @@ $(".disable-owl-swipe").on("touchstart mousedown", function(e) {
          <br>
          <p style="font-size: calc(0.65vw + 0.65vh); font-family: Inter; font-weight: 300; line-height: 125%;"> In addition to the roles above, which are represented by the Writers’ Guild, the show’s writing is also supported by entry-level roles like writers’ assistant and personal assistant, which often provide a springboard to staff writing positions with union representation. </p>
       </div>
+<br><br>
       <section>
          <div class="rt-container">
             <div class="col-rt-12">
@@ -588,65 +576,65 @@ $(".disable-owl-swipe").on("touchstart mousedown", function(e) {
 <div class="item disable-owl-swipe"><div>
                            <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                               <div class='demo-content'>
-                                 <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/staff_writer.png" style="width:100%" class="image">
+                                 <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/staff_writer.png" style="width:80%;margin-left:10%;display:flex;justify-content:center;" class="image">
                                  <p style="font-family:Newsreader; color:#FFFFFF; font-size:calc(0.65vw + 0.65vh)"><b>1 Staff writers</b></p>
-                                 <p style="font-family:Inter; min-height: 50%; color:#FFFFFF; font-size:calc(0.55vw + 0.55vh); line-height: 175%">Entry-level writers responsible for pitching ideas and assisting with rewrites.</p>
+                                 <p style="font-family:Inter; min-height: 50%; color:#FFFFFF; font-size:calc(0.55vw + 0.55vh); line-height: 150%">Entry-level writers responsible for pitching ideas and assisting with rewrites.</p>
                               </div>
                            </div>
                            <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                               <div class='demo-content'>
-                                 <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/story_editor.png" style="width:100%" class="image">
+                                 <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/story_editor.png" style="width:80%;margin-left:10%;display:flex;justify-content:center;"" class="image">
                                  <p style="font-family:Newsreader; color:#FFFFFF; font-size:calc(0.65vw + 0.65vh)"><b>2 Story editors</b></p>
-                                 <p style="font-family:Inter; color:#FFFFFF; font-size:calc(0.65vw + 0.65vh)">Salaried script contributors with higher seniority than staff writers, but little creative authority.</p>
+                                 <p style="font-family:Inter; min-height: 50%; color:#FFFFFF; font-size:calc(0.55vw + 0.55vh); line-height: 150%">Salaried script contributors with higher seniority than staff writers, but little creative authority.</p>
                               </div>
                            </div>
                            <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                               <div class='demo-content'>
-                                 <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/executive_story_editor.png" style="width:100%" class="image">
+                                 <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/executive_story_editor.png" style="width:80%;margin-left:10%;display:flex;justify-content:center;" class="image">
                                  <p style="font-family:Newsreader; color:#FFFFFF; font-size:calc(0.65vw + 0.65vh)"><b>3 Executive story editors</b></p>
-                                 <p style="font-family:Inter; color:#FFFFFF; font-size:calc(0.55vw + 0.55vh); line-height: 175%">Early-career team leaders with similar responsibilities as story editors, but with more experience.</p>
+                                 <p style="font-family:Inter; min-height: 50%; color:#FFFFFF; font-size:calc(0.55vw + 0.55vh); line-height: 150%">Early-career team leaders with similar responsibilities as story editors, but with more experience.</p>
                               </div>
                            </div>
                            <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                               <div class='demo-content'>
-                                 <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/co-producer.png" style="width:100%" class="image">
+                                 <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/co-producer.png" style="width:80%;margin-left:10%;display:flex;justify-content:center;" class="image">
                                  <p style="font-family:Newsreader; color:#FFFFFF; font-size:calc(0.65vw + 0.65vh)"><b>4 Co-producers</b></p>
-                                 <p style="font-family:Inter; color:#FFFFFF; font-size:calc(0.55vw + 0.55vh); line-height: 175%">Mid-career managers with higher-level responsibilities and some influence on creative decisions.</p>
+                                 <p style="font-family:Inter; min-height: 50%; color:#FFFFFF; font-size:calc(0.55vw + 0.55vh); line-height: 150%">Mid-career managers with higher-level responsibilities and some influence on creative decisions.</p>
                               </div>
                            </div>
                            <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                               <div class='demo-content'>
-                                 <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/producer.png" style="width:100%" class="image">
+                                 <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/producer.png" style="width:80%;margin-left:10%;display:flex;justify-content:center;" class="image">
                                  <p style="font-family:Newsreader; color:#FFFFFF; font-size:calc(0.65vw + 0.65vh)"><b>5 Producers</b></p>
-                                 <p style="font-family:Inter; color:#FFFFFF; font-size:calc(0.55vw + 0.55vh); line-height: 175%">Higher-level oversight of other junior writers and some responsibility for staffing and casting.</p>
+                                 <p style="font-family:Inter; min-height: 50%; color:#FFFFFF; font-size:calc(0.55vw + 0.55vh); line-height: 150%">Higher-level oversight of other junior writers and some responsibility for staffing and casting.</p>
                               </div>
                            </div>
                            <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                               <div class='demo-content'>
-                                 <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/supervising_producer.png" style="width:100%" class="image">
+                                 <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/supervising_producer.png" style="width:80%;margin-left:10%;display:flex;justify-content:center;" class="image">
                                  <p style="font-family:Newsreader; color:#FFFFFF; font-size:calc(0.65vw + 0.65vh)"><b>6 Supervising producers</b></p>
-                                 <p style="font-family:Inter; color:#FFFFFF; font-size:calc(0.55vw + 0.55vh); line-height: 175%">Senior writers with supervisory story development and drafting responsibilities.</p>
+                                 <p style="font-family:Inter; min-height: 50%; color:#FFFFFF; font-size:calc(0.55vw + 0.55vh); line-height: 150%">Senior writers with supervisory story development and drafting responsibilities.</p>
                               </div>
                            </div>
                            <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                               <div class='demo-content'>
-                                 <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/consulting_producer.png" style="width:100%" class="image">
+                                 <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/consulting_producer.png" style="width:80%;margin-left:10%;display:flex;justify-content:center;" class="image">
                                  <p style="font-family:Newsreader; color:#FFFFFF; font-size:calc(0.65vw + 0.65vh)"><b>7 Consulting producers</b></p>
-                                 <p style="font-family:Inter; color:#FFFFFF; font-size:calc(0.55vw + 0.55vh); line-height: 175%">High-level contributors who provide creative assistance to writing executives and showrunners.</p>
+                                 <p style="font-family:Inter; min-height: 50%; color:#FFFFFF; font-size:calc(0.55vw + 0.55vh); line-height: 150%">High-level contributors who provide creative assistance to writing executives and showrunners.</p>
                               </div>
                            </div>
                            <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                               <div class='demo-content'>
-                                 <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/co_executive_producer.png" style="width:100%" class="image">
+                                 <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/co_executive_producer.png" style="width:80%;margin-left:10%;display:flex;justify-content:center;" class="image">
                                  <p style="font-family:Newsreader; color:#FFFFFF; font-size:calc(0.65vw + 0.65vh)"><b>8 Co-executive producers</b></p>
-                                 <p style="font-family:Inter; color:#FFFFFF; font-size:calc(0.55vw + 0.55vh); line-height: 175%">Second-in-command executives with high-level writers' room oversight and creative autonomy.</p>
+                                 <p style="font-family:Inter; min-height: 50%; color:#FFFFFF; font-size:calc(0.55vw + 0.55vh); line-height: 150%">Second-in-command executives with high-level writers' room oversight and creative autonomy.</p>
                               </div>
                            </div>
                            <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
                               <div class='demo-content'>
-                                 <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/executive_producer.png" style="width:100%" class="image">
+                                 <img draggable="false" src="https://raw.githubusercontent.com/glencorahaskins/hollywoodwriters/main/executive_producer.png" style="width:80%;margin-left:10%;display:flex;justify-content:center;" class="image">
                                  <p style="font-family:Newsreader; color:#FFFFFF; font-size:calc(0.65vw + 0.65vh)"><b>9 EPs and showrunners</b></p>
-                                 <p style="font-family:Inter; color:#FFFFFF; font-size:calc(0.55vw + 0.55vh); line-height: 175%">Chief decision-makers at the absolute highest position in the writers' room hierarchy.</p>
+                                 <p style="font-family:Inter; min-height: 50%; color:#FFFFFF; font-size:calc(0.55vw + 0.55vh); line-height: 150%">Chief decision-makers at the absolute highest position in the writers' room hierarchy.</p>
                               </div>
                            </div>
                         </div>
